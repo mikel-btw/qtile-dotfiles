@@ -1,3 +1,4 @@
+import os
 import subprocess
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
@@ -51,7 +52,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown()),
 
     # Volume
-    Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn(os.path.expanduser("~/.config/qtile/scripts/volume-up.sh"))),
     Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")),
 
     # Brightness

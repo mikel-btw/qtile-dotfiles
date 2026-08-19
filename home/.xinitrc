@@ -5,9 +5,8 @@ chmod 700 $XDG_RUNTIME_DIR
 eval $(dbus-launch --sh-syntax)
 export DBUS_SESSION_BUS_ADDRESS
 
-# Audio (PipeWire - WIP)
-pipewire &
-pipewire-pulse &
-wireplumber &
+pulseaudio --start
+
+setxkbmap latam
 
 exec qtile start

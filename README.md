@@ -85,7 +85,7 @@ scripts/
 |-------------|--------|
 | Qtile       | working |
 | X11/startx  | working |
-| PipeWire    | WIP |
+| PulseAudio  | working |
 | Rofi        | installed, not configured |
 | Brightness  | working (brightnessctl, group video) |
 | Fonts       | JetBrains Mono installed manually |
@@ -96,9 +96,7 @@ scripts/
 rofi
 python3-psutil
 brightnessctl
-pipewire
-pipewire-pulse
-wireplumber
+pulseaudio
 curl
 unzip
 ```
@@ -108,3 +106,4 @@ unzip
 - `/run/user/1000` must exist before starting X. Created manually with root.
 - User must be in `video` group for brightnessctl without sudo.
 - JetBrains Mono installed to `~/.local/share/fonts/` (not in Void repos).
+

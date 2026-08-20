@@ -17,6 +17,8 @@ alias xr="sudo xbps-remove"
 alias xq="sudo xbps-query"
 alias off="sudo poweroff"
 alias rest="sudo reboot"
+alias monitor="xrandr --output HDMI-A-0 --mode 1920x1080 --rate 60 --above eDP"
+alias nomonitor="xrandr --output HDMI-A-0 --off"
 EOF
 
 echo "Aliases added to ~/.bashrc. Run 'source ~/.bashrc' to apply."

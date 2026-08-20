@@ -9,4 +9,8 @@ pulseaudio --start
 
 setxkbmap latam
 
+xrandr --output HDMI-A-0 --mode 1920x1080 --rate 60 --above eDP 2>/dev/null
+
+nitrogen --restore &
+
 exec qtile start

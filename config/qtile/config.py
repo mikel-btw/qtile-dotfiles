@@ -140,7 +140,7 @@ screens = [
             ],
             28,
             background=bg,
-            margin=[0, 0, 0, 0],
+            margin=[0, 10, 10, 10],
         ),
     ),
 ]

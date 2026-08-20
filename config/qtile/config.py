@@ -73,6 +73,7 @@ layouts = [
         border_focus=purple,
         border_normal=gray,
         border_width=2,
+        margin=10,
     ),
     layout.Max(),
 ]

@@ -74,6 +74,7 @@ layouts = [
         border_normal=gray,
         border_width=2,
         margin=10,
+        border_on_single=True,
     ),
     layout.Max(),
 ]
